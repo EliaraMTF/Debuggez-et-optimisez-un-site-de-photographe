@@ -21,9 +21,14 @@ body {
 .top-header .name {
 	font-size: 26px;
 }
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+	background-color: black;
+}
 
 .visually-hidden {
     position: absolute;
+	background-color: black;
     width: 1px;
     height: 1px;
     margin: -1px;
@@ -112,9 +117,13 @@ body {
 .gallery .nav {
 	justify-content: center;
 }
+.nav-pills .nav-link.active, 
+.nav-pills .show>.nav-link {
+	color: black;
+}
 .nav-pills .show > .nav-link,
 .nav-pills .nav-link:hover {
-    color: #fff; 
+    color: black; 
     font-weight: 900;
     background-color: #BEB45A; 
     border-radius: 0;

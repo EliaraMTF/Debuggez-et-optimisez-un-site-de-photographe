@@ -22,6 +22,18 @@ body {
 	font-size: 26px;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+    white-space: nowrap;
+}
+
 .nav ul {
 	display: flex;
 	list-style-type: none;
@@ -100,11 +112,18 @@ body {
 .gallery .nav {
 	justify-content: center;
 }
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-	color: #fff;
-	background-color: #BEB45A;
-	border-radius:0 ;
+.nav-pills .show > .nav-link,
+.nav-pills .nav-link:hover {
+    color: #fff; 
+    font-weight: 900;
+    background-color: #BEB45A; 
+    border-radius: 0;
+    cursor: pointer;
 }
+.active-tag{
+    background-color: rgb(230, 198, 20) !important; 
+}
+
 .nav-pills .nav-link {
 	color: #000
 }
